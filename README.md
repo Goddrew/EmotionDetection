@@ -2,7 +2,7 @@
 
 ## About
 
-This project aims to detect facial expression in real time. The CNN model I created is an re-implementation of the papers below with an added `AdaptiveAvgPool2d` layer and `LazyLinear` layer. The CNN is trained on [FER-2013](https://www.kaggle.com/datasets/msambare/fer2013), with 7 expressions including: **Angry, Disgust, Fear, Happy, Sad, Suprise, Neutral**. The model is built using PyTorch. OpenCV and Flask is used to build the rest of the web interface. 
+This project aims to detect facial expression in real time. The CNN model I created is an re-implementation of the papers below with an added `AdaptiveAvgPool2d` layer and `LazyLinear` layer. The CNN is trained on [FER-2013](https://www.kaggle.com/datasets/msambare/fer2013), with 7 expressions including: **Angry, Disgust, Fear, Happy, Sad, Suprise, Neutral**. The model is built using PyTorch. OpenCV is used for video processing and Flask is used to build the rest of the web interface. 
 
 ## Training Process & Result
 
