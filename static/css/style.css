@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+  padding: 0px; 
+  margin: 0px;
+  background-color: #F4F4F9;
+}
+
+.title {
+  font-size: 3em;
+  display: inline-block;
+  position: relative;
+}
+
+.title::after {
+  content: ''; 
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0); 
+  height: 2px; 
+  bottom: 0; 
+  left: 0; 
+  background-color: #B8DBD9; 
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.title:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.main-section {
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh; 
+}
+
+#vid {
+  width: 50%; 
+}
+
